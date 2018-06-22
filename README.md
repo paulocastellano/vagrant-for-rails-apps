@@ -1,10 +1,6 @@
 
 # Rails Virtual Development Environment on Vagrant
 
-
-[Español][es] |
-------------- |
-
 Configuration files to automatically set up a basic and customizable Vagrant box with the required tools to develop Rails projects.
 
 
@@ -52,6 +48,8 @@ If you notice that there are delays with the synchronization of shared folders w
 
 * **[Heroku CLI][9]**: Create and manage Heroku apps from the command line.
 
+* **[AWS CLI][16]**: Create and manage AWS apps from the command line.
+
 * **[Ngrok][15]**: Exposes local servers behind NATs and firewalls to the public internet over secure tunnels.
 
 * **ZSH Shell (With [Oh-My-Zsh!][14])** Tools to improve the experience of working with the shell.
@@ -73,4 +71,4 @@ If you notice that there are delays with the synchronization of shared folders w
 [13]: https://github.com/rails/webpacker
 [14]: http://ohmyz.sh/
 [15]: https://ngrok.com/
-[es]: lang/README.es.md
+[16]: https://aws.amazon.com/

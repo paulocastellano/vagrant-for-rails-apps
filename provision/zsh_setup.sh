@@ -32,6 +32,7 @@ install_ohmyzsh() {
   sed -i 's/# DISABLE_UNTRACKED_FILES_DIRTY="true"/DISABLE_UNTRACKED_FILES_DIRTY="true"/g' ~/.zshrc
   sed -i 's/# HIST_STAMPS="mm/dd/yyyy"/HIST_STAMPS="yyyy-mm-dd"/g' ~/.zshrc
   sed -i 's/plugins=(git)/plugins=(git dirhistory common-aliases command-not-found ruby)/g' ~/.zshrc
+  sed -i 'export PATH=~/.local/bin:$PATH' ~/.zshrc
 
   # Include .profile settings
   echo -e "\n# Include .profile settings"  >> ~/.zshrc

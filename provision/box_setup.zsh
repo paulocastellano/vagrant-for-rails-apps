@@ -30,6 +30,21 @@ install_postgres() {
 }
 
 ###
+# Install PIP
+install_pip() {
+  echo "Installing PIP"
+  curl -O https://bootstrap.pypa.io/get-pip.py
+  echo 'python get-pip.py --user'
+}
+
+###
+# Install AWS CLI
+install_aws_cli() {
+  echo "Installing AWS CLI"
+  echo 'pip install awscli --upgrade --user'
+}
+
+###
 # Install Redis data store
 install_redis() {
   echo "Installing Redis"
@@ -141,6 +156,8 @@ clean_up() {
 setup() {
   set_language
   install_postgres
+  install_pip
+  install_aws_cli
   install_redis
   install_nvm
   install_nodejs
