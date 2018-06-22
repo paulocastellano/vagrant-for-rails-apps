@@ -20,6 +20,7 @@ install_postgres() {
   # Set up vagrant user
   sudo -u postgres bash -c "psql -c \"CREATE USER vagrant WITH PASSWORD 'vagrant';\""
   sudo -u postgres bash -c "psql -c \"ALTER USER vagrant WITH SUPERUSER;\""
+  sudo -u postgres bash -c "psql -c \"CREATE DATABASE vagrant;\""
 
   # Make available useful extensions to the schemas
   sudo -u postgres bash -c "psql -c \"CREATE EXTENSION unaccent SCHEMA pg_catalog;\""
